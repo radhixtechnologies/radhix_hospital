@@ -121,10 +121,10 @@ export default function AdminAppointmentsPage() {
           </p>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap sm:flex-nowrap items-center gap-2 w-full sm:w-auto">
           <button
             onClick={exportCSV}
-            className="px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 flex items-center gap-1.5 shadow-sm"
+            className="flex-1 sm:flex-initial px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 flex items-center justify-center gap-1.5 shadow-sm"
           >
             <Download className="w-4 h-4" />
             <span>Export CSV</span>
@@ -132,10 +132,10 @@ export default function AdminAppointmentsPage() {
 
           <button
             onClick={() => setWalkInOpen(true)}
-            className="px-4 py-2.5 rounded-xl bg-blue-700 hover:bg-blue-800 text-white text-xs font-bold shadow-md shadow-blue-700/25 flex items-center gap-1.5 transition-all"
+            className="flex-1 sm:flex-initial px-4 py-2.5 rounded-xl bg-blue-700 hover:bg-blue-800 text-white text-xs font-bold shadow-md shadow-blue-700/25 flex items-center justify-center gap-1.5 transition-all"
           >
             <Plus className="w-4 h-4" />
-            <span>Add Walk-In Patient</span>
+            <span>Add Walk-In</span>
           </button>
         </div>
       </div>
@@ -209,8 +209,8 @@ export default function AdminAppointmentsPage() {
 
       {/* TABLE VIEW */}
       {viewMode === "table" ? (
-        <div className="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm overflow-x-auto">
-          <table className="w-full text-left text-xs">
+        <div className="p-4 sm:p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full text-left text-xs min-w-[700px]">
             <thead>
               <tr className="border-b border-slate-100 dark:border-slate-800 text-slate-400 font-bold uppercase tracking-wider">
                 <th className="pb-3">Booking ID</th>

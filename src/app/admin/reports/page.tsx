@@ -54,7 +54,7 @@ export default function AdminReportsPage() {
         </button>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="p-5 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-1">
           <span className="text-xs font-bold text-slate-500">Monthly Footfall</span>
           <p className="text-2xl font-black text-slate-900 dark:text-white">642</p>

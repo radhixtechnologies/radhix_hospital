@@ -36,8 +36,8 @@ export default function AdminPatientsPage() {
         />
       </div>
 
-      <div className="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm overflow-x-auto">
-        <table className="w-full text-left text-xs">
+      <div className="p-4 sm:p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm overflow-x-auto -mx-4 sm:mx-0">
+        <table className="w-full text-left text-xs min-w-[640px]">
           <thead>
             <tr className="border-b border-slate-100 dark:border-slate-800 text-slate-400 font-bold uppercase tracking-wider">
               <th className="pb-3">Patient Name</th>
